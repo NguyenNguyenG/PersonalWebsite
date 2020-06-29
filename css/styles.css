@@ -114,17 +114,14 @@
     padding-bottom: 0;
 }
 
-.section-heading h1, .section-heading h2 {
-    animation: fadeInRight;
-    animation-duration: 1.5s;
-}
-
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:62px;
     line-height:60px;
     font-weight:800;
     color:#111;
+    animation: fadeInRight;
+    animation-duration: 1.5s;
 }
 
 #banner h2 {
@@ -132,6 +129,9 @@
     font-size:18px;
     font-weight:300;
     color:#111;
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+    line-height: 25px;
 }
 
 /* HEADER */
