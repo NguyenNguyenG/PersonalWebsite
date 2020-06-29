@@ -1,0 +1,246 @@
+/* PAGE BORDER */
+
+.page-border {
+    position: fixed;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+    background: #ccc;
+    position: fixed;
+    z-index: 9999;
+}
+
+.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+    padding: 11px;
+    background: #ccc;
+}
+
+.page-border .bottom-border, .page-border .top-border {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+}
+
+.page-border .left-border, .page-border .right-border {
+    padding: 10px;
+    height: 100%;
+    top: 0;
+}
+
+.page-border .top-border {
+    top: 0;
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+
+.page-border .right-border {
+    right: 0;
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.page-border .bottom-border {
+    bottom: 0;
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+
+.page-border .left-border {
+    left: 0;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+#wrapper {
+    margin:0 15px;
+    padding: 15px 0;
+    position: relative;
+    animation: fadeIn;
+    animation-duration: 1.5s;
+}
+
+/* BANNER */
+
+#banner {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    outline: none;
+}
+
+#banner-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-38 {
+    width: 38.2%;
+}
+
+#banner .section-heading:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+    background: #d2b356;
+}
+
+.section-heading:after {
+    background:#d2b356;
+    content:"";
+    display:block;
+    width:30px;
+    height:5px;
+    margin-top:30px;
+}
+
+.section-heading {
+    padding: 0 0 15px 0;
+}
+
+.section-heading h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+}
+
+.section-heading h1, .section-heading h2 {
+    animation: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:62px;
+    line-height:60px;
+    font-weight:800;
+    color:#111;
+}
+
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:18px;
+    font-weight:300;
+    color:#111;
+}
+
+/* HEADER */
+
+#header {
+    height: 71px !important;
+    overflow: visible;
+    z-index: 9999;
+    width: 100%;
+    position: absolute !important;
+}
+
+#header nav a {
+    line-height: 71px;
+    padding: 0 10px;
+}
+
+#header nav a:hover {
+    opacity: 0.6;
+}
+
+#header .row {
+    padding: 0;
+}
+
+#header aside {
+    text-align: right;
+    float: right;
+}
+
+#header ul {
+    text-align: center;
+}
+
+#header nav ul {
+    text-transform: uppercase;
+}
+
+#header li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+
+#header nav a, #header i {
+    color:#111;
+}
+
+/* LOGO */
+
+#logo {
+    float: left;
+    margin-right: 15px;
+}
+
+#logo img {
+    max-height: 70px;
+    margin-right: 15px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px;
+}
+
+#header .social-icons {
+    margin-top: 27px;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+i {
+    font-size: 20px !important;
+}
+
+/* GENERAL LAYOUT */
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color:#111;
+}
+
+.row {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 75px 0;
+    position: relative;
+}
