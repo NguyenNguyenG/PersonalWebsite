@@ -2,11 +2,11 @@ var canvas = document.getElementById("canvas"),
 ctx = canvas.getContext('2d');
     
 canvas.width = window.outerWidth - 50;
-canvas.height = 150;
+canvas.height = 70;
 
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
-    x = 75, // Number of stars
+    x = 60, // Number of stars
     mouse = {
         x: 0,
         y: 0
@@ -46,16 +46,16 @@ function draw() {
     for (var i = 0, x = stars.length; i < x; i++) {
     var starI = stars[i];
     ctx.moveTo(starI.x,starI.y); 
-    if(distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+    if(distance(mouse, starI) < 100) ctx.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = stars.length; j < x; j++) {
         var starII = stars[j];
-        if(distance(starI, starII) < 150) {
+        if(distance(starI, starII) < 80) {
         //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx.lineTo(starII.x,starII.y); 
         }
     }
     }
-    ctx.lineWidth = 0.02;
+    ctx.lineWidth = 0.05;
     ctx.strokeStyle = '#808080';
     ctx.stroke();
 }
