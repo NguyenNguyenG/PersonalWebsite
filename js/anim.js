@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 });
 
-$(window).load(function () { // makes sure the whole site is loaded
+$(window).on("load", function () { // makes sure the whole site is loaded
 
 	/* Parallax Effects */
 	if (!!$.prototype.enllax) {
