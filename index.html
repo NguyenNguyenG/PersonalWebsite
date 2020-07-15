@@ -63,22 +63,22 @@
                             <ul class="social-icons">
                                 <li>
                                     <a target="_blank" title="Github" href="https://github.com/NguyenNguyenG">
-                                        <i class="fa fa-github-square"></i>
+                                        <i class="fa fa-github-square social"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/nguyennguyen98/">
-                                        <i class="fa fa-linkedin-square"></i>
+                                        <i class="fa fa-linkedin-square social"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" title="Facebook" href="https://www.facebook.com/nguyen.nguyengia">
-                                        <i class="fa fa-facebook-square"></i>
+                                        <i class="fa fa-facebook-square social"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a target="_blank" title="Instagram" href="https://www.instagram.com/win_2_nguyen/">
-                                        <i class="fa fa-instagram"></i>
+                                        <i class="fa fa-instagram social"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -93,13 +93,13 @@
                                     <a href="#banner">About</a>
                                 </li>
                                 <li>
+                                    <a href="#experience">Experience</a>
+                                </li>
+                                <li>
                                     <a href="#education">Education</a>
                                 </li>
                                 <li>
-                                    <a href="#Experience">Experience</a>
-                                </li>
-                                <li>
-                                    <a href="#Skills">Skills</a>
+                                    <a href="#skills">Skills</a>
                                 </li>
                             </ul>
                         </nav>
@@ -126,6 +126,58 @@
                 
             </div><!--End of Row-->
         </header>
+        <main id="content">
+            <section id="experience">
+                <div class="row clearfix">
+                    <h1 class="section-title">
+                        <i class="fa fa-briefcase"></i> &nbsp; WORK EXPERIENCE
+                    </h1>
+                    <div class="experience-card" id="exp-fb">
+                        <h2> Software Engineer Intern</h2>
+                        <h3> <i class="fa fa-facebook-square"></i> Facebook</h3>
+                        <h4> Sep 2019 - Dep 2019 &nbsp; &middot; &nbsp;  4 mos</h4>
+                        <ul>
+                            <li>Worked in Facebook App Monetization under Lead Ads Team</li>
+                            <li>Rewrite the Prefilling System for Lead Ads</li>
+                            <li>Removed redundant API calls and potentially saved hundreds of thousands of dollars</li>
+                          </ul>  
+                    </div>
+                    <div class="experience-card" id="exp-amazon"> 
+                        <h2> Software Development Engineer Intern</h2>
+                        <h3> <i class="fa fa-amazon"></i> Amazon</h3>
+                        <h4> Jun 2019 - Sep 2019 &nbsp; &middot; &nbsp;  4 mos</h4>
+                        <ul>
+                            <li>Worked on backend team at Amazon Fashion - The Drop</li>
+                            <li>Used AWS Lambda, Amazon SNS, Amazon SQS, Amazon DynamoDB, and AWS CloudFormation to build a validation pipeline 
+                                that ensures information of clothing items (title, image, etc.) in each release are present before the release goes live</li>
+                            <li>Reduced time required for manual validation by PMs by 50% for each release</li>
+                          </ul>  
+                    </div>
+                    <div class="experience-card" id="exp-viasat">
+                        <h2> Software Engineer Intern</h2>
+                        <h3> Viasat</h3>
+                        <h4> Jun 2018 - Sep 2018 &nbsp; &middot; &nbsp;  4 mos</h4>
+                        <ul>
+                            <li>MEAN stack (MongoDB, Express, AngularJS, Node.js) developer building web application that lets business analysts enforce 
+                                vital business protocols during product development and centralize critical data regarding company products and services</li>
+                            <li>Built advanced search functionality that allows analysts to quickly search for business plans that match specified filters</li>
+                            <li>Utilized jsonwebtoken package to build the authentication process with refresh token and expiring access token for a secured 
+                                API that exposes product development protocols.</li>
+                            <li>Saved the company ~150,000/year</li>
+                          </ul>  
+                    </div>
+                   
+                    <div class="timeline">
+                        <div class="bullet"></div>
+                        <div class="line"></div>
+                        <div class="bullet2"></div>
+                        <div class="line2"></div>
+                        <div class="bullet3"></div>
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
     </div>
 
     <!-- all these references goes before the closing body tag-->
@@ -134,8 +186,10 @@
     <!-- <script src="http://cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="js/jquery.enllax.min.js"></script>
     <script src="js/anim.js"></script>
     <script src="js/particle.js"></script>
+    <script src="js/timeline.js"></script>
 </body>
 
