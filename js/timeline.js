@@ -2,7 +2,7 @@ function animate(){
     console.log("called");
     var timeline = anime.timeline({
         easing: 'linear',
-        duration: 3500,
+        duration: 4500,
     });
 
     timeline.add({
@@ -27,11 +27,16 @@ function animate(){
         targets: '.bullet3',
         opacity: 1,
         duration: 500,
+    }).add({
+        targets: '.line3',
+        height: '350px',
+        opacity: 1,
+        duration: 1000,
     });
 
     var timeline2 = anime.timeline({
         easing: 'linear',
-        duration: 3500,
+        duration: 4500,
     });
 
     timeline2.add({
