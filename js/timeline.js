@@ -1,8 +1,7 @@
-function animate(){
-    console.log("called");
+function animateExperience(){
     var timeline = anime.timeline({
         easing: 'linear',
-        duration: 4500,
+        duration: 5200,
     });
 
     timeline.add({
@@ -22,16 +21,16 @@ function animate(){
         targets: '.line2',
         height: '280px',
         opacity: 1,
-        duration: 1000,
+        duration: 1200,
     }).add({
         targets: '.bullet3',
         opacity: 1,
         duration: 500,
     }).add({
         targets: '.line3',
-        height: '350px',
+        height: '340px',
         opacity: 1,
-        duration: 1000,
+        duration: 1500,
     });
 
     var timeline2 = anime.timeline({
@@ -54,22 +53,58 @@ function animate(){
     });
 }
 
-const exp = document.getElementById('experience');
+function animateEducation(){
+    var timeline = anime.timeline({
+        easing: 'linear',
+        duration: 2500,
+    });
+
+    timeline.add({
+        targets: '.bullet4',
+        opacity: 1,
+        duration: 500,
+    }).add({
+        targets: '.line4',
+        height: '530px',
+        opacity: 1,
+        duration: 1500,
+    });
+
+    anime({
+        targets: '#education-card',
+        opacity: 1,
+        duration: 1500,
+        easing: 'linear',
+    })
+}
 
 const config = {
     root: null,
     threshold: 0.4
 };
 
-const io = new IntersectionObserver(entries => {
+const exp = document.getElementById('experience');
+const edu = document.getElementById('education');
+
+const ioExp = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0.09) {
-        animate();
+        animateExperience();
         io.unobserve(entry.target);
       }
     });
 }, config);
 
-io.observe(exp);
+ioExp.observe(exp);
+
+const ioEdu = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0.09) {
+        animateEducation();
+        io.unobserve(entry.target);
+      }
+    });
+}, config);
+ioEdu.observe(edu);
 
 
