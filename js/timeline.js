@@ -78,6 +78,15 @@ function animateEducation(){
     })
 }
 
+function animateSkill(){
+    anime({
+        targets: '.skill-blink',
+        opacity: 1,
+        easing: 'linear',
+        duration: 1500,
+    });
+}
+
 const config = {
     root: null,
     threshold: 0.4
@@ -85,12 +94,13 @@ const config = {
 
 const exp = document.getElementById('experience');
 const edu = document.getElementById('education');
+const skill = document.querySelector('.skill-blink')
 
 const ioExp = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0.09) {
         animateExperience();
-        io.unobserve(entry.target);
+        ioExp.unobserve(entry.target);
       }
     });
 }, config);
@@ -101,10 +111,20 @@ const ioEdu = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0.09) {
         animateEducation();
-        io.unobserve(entry.target);
+        ioEdu.unobserve(entry.target);
       }
     });
 }, config);
 ioEdu.observe(edu);
+
+const ioSkill = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0.09) {
+        animateSkill();
+        ioSkill.unobserve(entry.target);
+      }
+    });
+}, config);
+ioSkill.observe(skill);
 
 

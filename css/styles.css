@@ -295,6 +295,23 @@ body {
     height: 800px;
 }
 
+.timeline2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 530px;
+}
+
+.left-s-card {
+    margin-left: 10%;
+    height: 350px;
+    width: 40%;
+}
+
+.right-s-card {
+    float: right;
+    width: 45%;
+}
+
 .e-card {
     float: right;
     width: 85%;
@@ -310,7 +327,7 @@ body {
     margin-bottom: 5px;
 }
 
-.e-card h3 {
+.e-card h3, .right-s-card h2, .left-s-card h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:20px;
     font-weight:500;
@@ -334,4 +351,22 @@ body {
 
 #content {
     margin-top: 120px;
+}
+
+.star-rows {
+    float:right;
+    width: 55%;
+}
+
+.star-row {
+    margin-top:5px; 
+    padding-bottom: 12px;
+}
+
+.star-rows i {
+    color: #d2b356;
+}
+
+.skill-blink {
+    opacity: 0;
 }
