@@ -370,3 +370,74 @@ body {
 .skill-blink {
     opacity: 0;
 }
+
+#header.nav-solid nav a:hover {
+    color:#d2b356;
+}
+
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i {
+    color:#333;
+}
+
+#header.nav-solid .active {
+    color: #d2b356;
+    border-color: #d2b356;
+}    
+
+#navigation-logo {
+    display:none;
+}
+
+.nav-solid #logo #banner-logo {
+    display: none;
+}
+
+.nav-solid #logo #navigation-logo {
+    display: inline-block;
+}
+
+#header.nav-solid [class*='col-'] {
+    padding: 0;
+}
+
+#header.nav-solid {
+    background: #fff;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
+    position: fixed !important;
+    left:0;
+}
+
+#header.nav-solid nav a {
+    border-bottom: 3px solid;
+    border-color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#header.nav-solid nav a:hover {
+    opacity: 1;
+}
+
+#header.nav-solid .social-icons a {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 0.5;
+}
+
+#header.nav-solid .social-icons a:hover {
+    opacity: 1;
+    color: #e4473c;
+}
+
+#header.nav-solid aside {
+    top: 20px;
+}
+
+.fade {
+    animation: fadeInDown;
+    animation-duration: 1s;
+}

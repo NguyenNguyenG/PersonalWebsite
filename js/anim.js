@@ -8,26 +8,15 @@ $(document).ready(function () {
 	}
 
 	new Waypoint ({ 
-		element: document.getElementById('waypoint'),
-		handler: function () {
+		element: document.getElementById('content'),
+		handler: function (direction) {
 			if (direction === 'down') {
-				$('#header').addClass('nav-solid fadeInDown');
+				$('#header').addClass('nav-solid fade');
 			}
 			else {
-				$('#header').removeClass('nav-solid fadeInDown');
+				$('#header').removeClass('nav-solid fade');
 			}
 		}		
 	});
-	console.log("ready");
 
 });
-
-$(window).on("load", function () { // makes sure the whole site is loaded
-
-	/* Parallax Effects */
-	if (!!$.prototype.enllax) {
-		$(window).enllax();
-	}
-
-});
-
