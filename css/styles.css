@@ -63,7 +63,7 @@
 
 /* BANNER */
 
-#banner {
+#about {
 
     background-size: cover;
     outline: none;
@@ -84,7 +84,7 @@
     width: 38.2%;
 }
 
-#banner .section-heading:before {
+#about .section-heading:before {
     content: "";
     display: block;
     width: 30px;
@@ -114,7 +114,7 @@
     padding-bottom: 0;
 }
 
-#banner h1 {
+#about h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:62px;
     line-height:60px;
@@ -124,7 +124,7 @@
     animation-duration: 1.5s;
 }
 
-#banner h2 {
+#about h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:18px;
     font-weight:300;
