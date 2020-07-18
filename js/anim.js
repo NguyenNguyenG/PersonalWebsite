@@ -2,11 +2,6 @@
 
 $(document).ready(function () {
 
-    /* Sticky Navigation */
-	if (!!$.prototype.stickyNavbar) {
-		$('#header').stickyNavbar();
-	}
-
 	new Waypoint ({ 
 		element: document.getElementById('content'),
 		handler: function (direction) {
