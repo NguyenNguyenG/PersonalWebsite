@@ -396,10 +396,11 @@ body {
 
 .nav-solid #logo #navigation-logo {
     display: inline-block;
+    padding-top: 5px;
 }
 
 #header.nav-solid [class*='col-'] {
-    padding: 0;
+    padding: 0 20px;
 }
 
 #header.nav-solid {
@@ -407,6 +408,24 @@ body {
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
     position: fixed !important;
     left:0;
+    font-size: 14px;
+}
+
+#header.nav-solid ul {
+    margin-top: 0px;
+}
+
+#header.nav-solid #nav-main ul {
+    padding-top: 6px;
+}
+
+#header.nav-solid #nav-main a {
+    line-height: 65px;
+    height: 62px;
+}
+
+#header.nav-solid aside {
+    padding-top: 25px;
 }
 
 #header.nav-solid nav a {
@@ -432,7 +451,6 @@ body {
 
 #header.nav-solid .social-icons a:hover {
     opacity: 1;
-    color: #e4473c;
 }
 
 #header.nav-solid aside {
